@@ -10,20 +10,14 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  title: "Sistema de Rastreo en Tiempo Real",
+  tagline:
+    "Documentación para aplicación móvil de rastreo de transporte público",
+  url: "https://tu-sitio.com",
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  favicon: "img/favicon.ico",
+  organizationName: "Wise-Owl", // Nombre de usuario de GitHub o nombre de organización
+  projectName: "maps-app", // Nombre del repositorio de GitHub
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -32,8 +26,8 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
@@ -70,82 +64,74 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
-      navbar: {
-        title: "My Site",
-        logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+  themeConfig: {
+    navbar: {
+      title: "Sistema de Rastreo",
+      logo: {
+        alt: "Logo del Sistema de Rastreo",
+        src: "img/logo.svg",
+      },
+      items: [
+        {
+          to: "docs/intro",
+          activeBasePath: "docs",
+          label: "Documentación",
+          position: "left",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+        { to: "blog", label: "Blog", position: "left" },
+        {
+          href: "https://github.com/wise-owl-dev/Maps",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Introducción",
+              to: "docs/intro",
+            },
+            {
+              label: "Instalación",
+              to: "docs/instalacion/requisitos",
+            },
+          ],
+        },
+        {
+          title: "Comunidad",
+          items: [
+            {
+              label: "Discord",
+              href: "https://discord.gg/tu-discord",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/tu-twitter",
+            },
+          ],
+        },
+        {
+          title: "Más",
+          items: [
+            {
+              label: "Blog",
+              to: "blog",
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/wise-owl-dev/Maps",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Tu Proyecto. Construido con Docusaurus.`,
+    },
+  },
 };
 
 export default config;

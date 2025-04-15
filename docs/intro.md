@@ -1,47 +1,42 @@
 ---
 sidebar_position: 1
+id: intro
+title: Introducción
+sidebar_label: Introducción
+slug: /intro
 ---
 
-# Tutorial Intro
+# Sistema de Rastreo en Tiempo Real para Transporte Público
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Visión General
 
-## Getting Started
+El Sistema de Rastreo en Tiempo Real para Transporte Público es una aplicación móvil diseñada para proporcionar información precisa y actualizada sobre la ubicación y tiempos estimados de llegada de vehículos de transporte público.
 
-Get started by **creating a new site**.
+## Problema que resolvemos
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+El transporte público presenta varios desafíos para los usuarios:
 
-### What you'll need
+- Incertidumbre sobre los tiempos de llegada de los vehículos
+- Falta de información sobre retrasos o cambios en las rutas
+- Dificultad para planificar desplazamientos eficientes
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Nuestra aplicación aborda estos problemas proporcionando datos en tiempo real, mejorando significativamente la experiencia del usuario y fomentando el uso del transporte público.
 
-## Generate a new site
+## Características Principales
 
-Generate a new Docusaurus site using the **classic template**.
+- **Rastreo GPS en tiempo real**: Visualiza la ubicación exacta de los vehículos en el mapa
+- **Estimaciones precisas**: Conoce los tiempos de llegada calculados con base en la posición actual y las condiciones del tráfico
+- **Notificaciones**: Recibe alertas sobre retrasos, cambios de ruta o eventos relevantes
+- **Planificación de rutas**: Encuentra la mejor combinación de rutas para llegar a tu destino
+- **Modo sin conexión**: Accede a horarios y rutas incluso sin internet
 
-The classic template will automatically be added to your project after you run the command:
+## Público Objetivo
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- **Usuarios de transporte público**: Personas que utilizan regularmente el transporte público para sus desplazamientos diarios
+- **Turistas y visitantes**: Personas no familiarizadas con el sistema de transporte local
+- **Operadores de transporte**: Empresas y entidades que gestionan flotas de vehículos
+- **Administraciones públicas**: Organismos interesados en mejorar la eficiencia del transporte urbano
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+---
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Esta documentación está diseñada para ayudarte a entender, instalar y utilizar efectivamente nuestra aplicación de rastreo. Si tienes preguntas específicas, consulta nuestra sección de [Preguntas Frecuentes](faq) o ponte en contacto con nuestro equipo de soporte.
